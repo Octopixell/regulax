@@ -1,12 +1,8 @@
 {
   "branches": [
     {
-      "name": "feature/*",
-      "prerelease": "${name.replace(/^feature\\//g, '')}"
-    },
-    {
-      "name": "fix/*",
-      "prerelease": "${name.replace(/^fix\\//g, '')}"
+      "name": "alpha",
+      "prerelease": true
     },
     "main"
   ],
