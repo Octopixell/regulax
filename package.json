@@ -1,0 +1,63 @@
+{
+  "name": "regulax",
+  "version": "0.0.0",
+  "description": "An easier and more relaxed way of working with regular expressions for pattern matching!",
+  "main": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "start": "tsc --build -w",
+    "build": "tsc --build",
+    "clean": "rimraf dist",
+    "format": "prettier --ignore-path .gitignore --write '**/*.+(js|ts|json)'",
+    "format-check": "prettier --ignore-path .gitignore --check '**/*.+(js|ts|json)'",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts .",
+    "rebuild": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Octopixell/regulax.git"
+  },
+  "keywords": [
+    "regex",
+    "regular",
+    "expression",
+    "pattern"
+  ],
+  "author": "Marco Strijker",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Octopixell/regulax/issues"
+  },
+  "homepage": "https://github.com/Octopixell/regulax#readme",
+  "lint-staged": {
+    "*.{js,ts}": "eslint --cache --fix",
+    "*.+(js|ts|json)": "prettier --write"
+  },
+  "volta": {
+    "node": "18.15.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.0",
+    "semantic-release": "^20.1.1",
+    "typescript": "^4.9.5"
+  }
+}
