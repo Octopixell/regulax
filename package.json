@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Octopixell/regulax.git"
+    "url": "https://github.com/Octopixell/regulax"
   },
   "keywords": [
     "regex",
