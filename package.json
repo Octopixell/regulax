@@ -42,18 +42,15 @@
     "node": "18.15.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-typescript": "^7.21.0",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@jest/globals": "^29.5.0",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^9.0.2",
+    "@types/jest": "^29.5.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
-    "babel-jest": "^29.5.0",
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -64,6 +61,7 @@
     "prettier": "^2.8.4",
     "rimraf": "^4.4.0",
     "semantic-release": "^20.1.1",
+    "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
   }
 }
