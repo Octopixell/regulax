@@ -33,6 +33,8 @@ jobs:
       - run: npm run rebuild
       - id: semantic-release
         run: npm run semantic-release
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - if: steps.semantic.outputs.new_release_published == 'true'
         run: npm publish --access public
         env:
