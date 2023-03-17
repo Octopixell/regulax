@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +21,8 @@ jobs:
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
 
-  publish-npm:
+  release:
+    name: Release
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -36,12 +38,7 @@ jobs:
       - name: Build
         run: npm run rebuild
       - name: Release
-        id: semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm run semantic-release
-      - if: steps.semantic.outputs.new_release_published == 'true'
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
