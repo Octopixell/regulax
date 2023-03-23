@@ -1,6 +1,6 @@
 {
   "name": "@octopixell/regulax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An easier and more relaxed way of working with regular expressions for pattern matching!",
   "main": "./dist/index.js",
   "files": [
