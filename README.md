@@ -1,6 +1,6 @@
 # Regulax 
 
-![npm (scoped)](https://img.shields.io/npm/v/@octopixell/regulax?color=success) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/octopixell/regulax/npm-publish.yml) ![Codecov](https://img.shields.io/codecov/c/gh/octopixell/regulax) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/octopixell/regulax) ![GitHub](https://img.shields.io/github/license/octopixell/regulax)
+![npm (scoped)](https://img.shields.io/npm/v/@octopixell/regulax?color=success) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/octopixell/regulax/release.yml) ![Codecov](https://img.shields.io/codecov/c/gh/octopixell/regulax) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/octopixell/regulax) ![GitHub](https://img.shields.io/github/license/octopixell/regulax)
 
 An easier and more relaxed way of working with regular expressions for pattern matching!
 
